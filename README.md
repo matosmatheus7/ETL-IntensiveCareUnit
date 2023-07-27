@@ -84,7 +84,11 @@ Before running our ETL application, make sure to set up the necessary Kafka topi
 
 `kafka-topics.sh --bootstrap-server localhost:9092 --create --topic ICUsubscription --replication-factor 1 --partitions 1` 
 
-Use this command to start publishing messages.
+Use this command to list the topics on Kafka:
+
+`kafka-topics.sh --bootstrap-server localhost:9092 --list`
+
+Use this command to start publishing messages:
 
 `kafka-console-producer.sh --topic ICUsubscription --broker-list localhost:9092` 
 
